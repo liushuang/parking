@@ -13,4 +13,7 @@ public class Car {
         this.carId = carId;
     }
 
+    public String getCarId(){
+        return this.carId;
+    }
 }

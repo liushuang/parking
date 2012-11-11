@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8de2ce4-4609-4b2c-a031-ff218b207d0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java" />
     </list>
     <ignored path="parking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +66,7 @@
       <file leaf-file-name="ParkingTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="12" selection-start="711" selection-end="711" vertical-scroll-proportion="0.6695652">
+            <state line="21" column="24" selection-start="452" selection-end="452" vertical-scroll-proportion="0.49565217">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,10 +74,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NoCarException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="40" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoSpaceParkingException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="55" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Car.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+            <state line="16" column="26" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,8 +104,11 @@
       <file leaf-file-name="Parking.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="28" column="20" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#356#368#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +126,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java" />
         <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParingException.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java" />
         <option value="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java" />
       </list>
     </option>
@@ -212,6 +237,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
@@ -234,6 +260,94 @@
       <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParkingTest.should_return_101_after_add_a_car" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingTest" />
+      <option name="METHOD_NAME" value="should_return_101_after_add_a_car" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParkingTest.should_get_A_car_and_carNumber_minus_1" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingTest" />
+      <option name="METHOD_NAME" value="should_get_A_car_and_carNumber_minus_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParkingTest.should_throw_No_Car_Exception_when_get_a_car_from_empty_park" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingTest" />
+      <option name="METHOD_NAME" value="should_throw_No_Car_Exception_when_get_a_car_from_empty_park" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParkingTest.should_return_fail_add_car_to_no_space_parking" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingTest" />
+      <option name="METHOD_NAME" value="should_return_fail_add_car_to_no_space_parking" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -365,8 +479,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_return_101_after_add_a_car" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_get_A_car_and_carNumber_minus_1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_throw_No_Car_Exception_when_get_a_car_from_empty_park" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingTest.should_return_fail_add_car_to_no_space_parking" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -468,21 +586,38 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+        <state line="16" column="26" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="28" column="20" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#356#368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="12" selection-start="711" selection-end="711" vertical-scroll-proportion="0.6695652">
+        <state line="21" column="24" selection-start="452" selection-end="452" vertical-scroll-proportion="0.49565217">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

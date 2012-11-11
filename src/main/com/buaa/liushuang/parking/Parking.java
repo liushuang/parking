@@ -1,5 +1,8 @@
 package com.buaa.liushuang.parking;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: software
@@ -8,21 +11,42 @@ package com.buaa.liushuang.parking;
  * To change this template use File | Settings | File Templates.
  */
 public class Parking {
-    private int carNumber;
+    private int parkingSpaceNumber;
+    private Map<String,Car> parkingCarMap = new HashMap<String,Car>();
     
     public Parking(){
 
     }
-    
-    public void add() {
-        this.carNumber++;
+
+    public void parkCar(Car car) throws NoSpaceParkingException{
+        if(this.parkingSpaceNumber <= 0){
+            throw new NoSpaceParkingException();
+        }
+        this.parkingCarMap.put(car.getCarId(),car);
+        this.parkingSpaceNumber--;
     }
 
-    public void setParkingSize(int carNumber) {
-       this.carNumber = carNumber;
+    public void setParkingSpaceNumber(int parkingSpaceNumber) {
+
+       this.parkingSpaceNumber = parkingSpaceNumber;
     }
 
-    public int getCarNumber() {
-        return carNumber;
+    public int getParkingSpaceNumber() {
+        return parkingSpaceNumber;
+    }
+
+    public Car getCar(Car car) throws NoCarException {
+        return getCarByID(car.getCarId());
+    }
+
+    public Car getCarByID(String carId) throws NoCarException {
+        if(this.parkingCarMap.containsKey(carId)){
+            this.parkingSpaceNumber ++;
+            Car car = parkingCarMap.get(carId);
+            parkingCarMap.remove(carId);
+            return car;
+        }else{
+            throw new NoCarException();
+        }
     }
 }
