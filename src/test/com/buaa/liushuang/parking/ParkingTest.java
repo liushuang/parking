@@ -20,7 +20,7 @@ public class ParkingTest {
     public void init_parking(){
         this.park = new Parking();
         park.setParkingSpaceNumber(100);
-        this.car = new Car("10000");
+        this.car = new Car();
     }
 
     @Test
@@ -32,11 +32,11 @@ public class ParkingTest {
 
     @Test
     public void should_get_A_car_and_carNumber_minus_1() throws NoSpaceParkingException, NoCarException {
-        Car A = new Car("10000");
+        Car A = new Car();
 
-        park.parkCar(A);
+        int ticket = park.parkCar(A);
 
-        Car B = park.getCar(A);
+        Car B = park.getCarByID(ticket);
         Assert.assertEquals(A,B);
         Assert.assertEquals(100,park.getParkingSpaceNumber());
     }
@@ -51,6 +51,27 @@ public class ParkingTest {
 
     @Test(expected = NoCarException.class)
     public void should_throw_No_Car_Exception_when_get_a_car_from_empty_park() throws NoCarException{
-        park.getCarByID("200000");
+        park.getCarByID(0);
+    }
+
+    @Test
+    public void should_get_right_car_by_carId() throws NoSpaceParkingException, NoCarException {
+        Car car1 = new Car();
+        int ticket = park.parkCar(car1);
+
+        Car car2 = park.getCarByID(ticket);
+
+        Assert.assertEquals(car1,car2);
+    }
+
+    @Test(expected = NoCarException.class)
+    public void should_throw_no_car_exception_get_car_twice_by_carId() throws NoSpaceParkingException, NoCarException {
+        int ticket = park.parkCar(car);
+        try{
+        park.getCarByID(ticket);
+        }catch(Exception e){
+            Assert.fail("第一次取车就失败啦");
+        }
+        park.getCarByID(ticket);
     }
 }

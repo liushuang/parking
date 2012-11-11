@@ -8,12 +8,5 @@ package com.buaa.liushuang.parking;
  * To change this template use File | Settings | File Templates.
  */
 public class Car {
-    private String carId;
-    public Car(String carId){
-        this.carId = carId;
-    }
 
-    public String getCarId(){
-        return this.carId;
-    }
 }
