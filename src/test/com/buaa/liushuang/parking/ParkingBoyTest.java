@@ -24,7 +24,9 @@ public class ParkingBoyTest {
     @Test
     public void should_parking_in_a_empty_park_place() throws NoCarException, NoSpaceParkingException {
         parkPlace = new ParkPlace(100);
-        this.parkingBoy = new ParkingBoy(parkPlace);
+        parkPlaceList = new ArrayList<ParkPlace>();
+        parkPlaceList.add(parkPlace);
+        this.parkingBoy = new ParkingBoy(parkPlaceList);
         Car car = new Car();
         Ticket ticket = parkingBoy.parkCar(car);
         Assert.assertEquals(99,parkPlace.getParkingSpaceNumber());
@@ -35,7 +37,9 @@ public class ParkingBoyTest {
     @Test
     public void should_get_same_car_after_parking() throws NoSpaceParkingException, NoCarException {
         parkPlace = new ParkPlace(100);
-        this.parkingBoy = new ParkingBoy(parkPlace);
+        parkPlaceList = new ArrayList<ParkPlace>();
+        parkPlaceList.add(parkPlace);
+        this.parkingBoy = new ParkingBoy(parkPlaceList);
         Car car = new Car();
         Ticket ticket = parkingBoy.parkCar(car);
         Car carAfterParking = parkingBoy.getCarByTicket(ticket);

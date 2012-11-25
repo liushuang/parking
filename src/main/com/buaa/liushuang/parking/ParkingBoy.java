@@ -11,11 +11,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkingBoy {
-    private List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
-
-    public ParkingBoy(ParkPlace parkPlace) {
-        this.parkPlaceList.add(parkPlace);
-    }
+    protected List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
 
     public ParkingBoy(List<ParkPlace> parkPlaceList) {
         this.parkPlaceList = parkPlaceList;
