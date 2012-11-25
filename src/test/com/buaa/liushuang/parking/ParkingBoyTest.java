@@ -71,11 +71,25 @@ public class ParkingBoyTest {
     }
 
     @Test(expected = NoSpaceParkingException.class)
-    public void should_throw_NoSpaceParkingException_when_parkig_to_a_full_ParkSpace() throws NoSpaceParkingException {
+    public void should_throw_NoSpaceParkingException_when_parking_to_a_full_ParkSpace() throws NoSpaceParkingException {
         this.parkPlaceList = new ArrayList<ParkPlace>();
         ParkPlace parkPlace1 = new ParkPlace(1);
         parkPlaceList.add(parkPlace1);
         this.parkingBoy = new ParkingBoy(parkPlaceList);
+        parkingBoy.parkCar(new Car());
+        Car car = new Car();
+        parkingBoy.parkCar(car);
+    }
+
+    @Test(expected = NoSpaceParkingException.class)
+    public void should_throw_NoSpaceParkingException_when_parking_to_two_full_ParkSpace() throws NoSpaceParkingException {
+        this.parkPlaceList = new ArrayList<ParkPlace>();
+        ParkPlace parkPlace1 = new ParkPlace(1);
+        ParkPlace parkPlace2 = new ParkPlace(1);
+        parkPlaceList.add(parkPlace1);
+        parkPlaceList.add(parkPlace2);
+        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        parkingBoy.parkCar(new Car());
         parkingBoy.parkCar(new Car());
         Car car = new Car();
         parkingBoy.parkCar(car);

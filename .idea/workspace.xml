@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8de2ce4-4609-4b2c-a031-ff218b207d0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\liushuang\parking\src\main\com\buaa\liushuang\parking\Parking.java" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java" />
-      <change type="MOVED" beforePath="E:\liushuang\parking\src\test\com\buaa\liushuang\parking\ParkingTest.java" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkPlaceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java" />
     </list>
     <ignored path="parking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,7 +72,7 @@
       <file leaf-file-name="ParkingBoyTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="24" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.13822894">
+            <state line="94" column="79" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.63066953">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,29 +274,7 @@
       <recent name="com.buaa.liushuang.parking" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingBoyTest">
-    <configuration default="false" name="ParkingBoyTest.should_get_same_car_after_parking" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="parking" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingBoyTest" />
-      <option name="METHOD_NAME" value="should_get_same_car_after_parking" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace">
     <configuration default="false" name="ParkingBoyTest.should_park_a_car_when_has_two_park_place" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="parking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -376,6 +349,28 @@
       <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingBoyTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingBoyTest" />
+      <option name="METHOD_NAME" value="should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -531,11 +526,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_parking_in_a_empty_parkplace" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_get_same_car_after_parking" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_park_a_car_when_has_two_park_place" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_park_a_car_when_has_two_park_place_and_one_is_full" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_a_full_ParkSpace" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_park_a_car_when_has_two_park_place" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_park_a_car_when_has_two_park_place_and_one_is_full" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_a_full_ParkSpace" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -684,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="24" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.13822894">
+        <state line="94" column="79" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.63066953">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
