@@ -11,14 +11,14 @@ import org.junit.Test;
  * Time: 下午3:06
  * To change this template use File | Settings | File Templates.
  */
-public class ParkingTest {
+public class ParkPlaceTest {
 
-    private Parking park;
+    private ParkPlace park;
     private Car car;
 
     @Before
     public void init_parking() {
-        this.park = new Parking(100);
+        this.park = new ParkPlace(100);
         this.car = new Car();
     }
 
@@ -42,7 +42,7 @@ public class ParkingTest {
 
     @Test(expected = NoSpaceParkingException.class)
     public void should_return_fail_add_car_to_no_space_parking() throws NoSpaceParkingException {
-        park = new Parking(0);
+        park = new ParkPlace(0);
         park.parkCar(car);
     }
 
@@ -71,4 +71,5 @@ public class ParkingTest {
         }
         park.getCarByTicket(ticket);
     }
+
 }

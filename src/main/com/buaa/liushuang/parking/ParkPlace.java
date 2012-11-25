@@ -10,7 +10,7 @@ import java.util.Map;
  * Time: 下午3:09
  * To change this template use File | Settings | File Templates.
  */
-public class Parking {
+public class ParkPlace {
     /**
      * 停车场剩余的停车位
      */
@@ -20,7 +20,7 @@ public class Parking {
      */
     private Map<Ticket, Car> parkingCarMap = new HashMap<Ticket, Car>();
 
-    public Parking(int maxParkingNum) {
+    public ParkPlace(int maxParkingNum) {
         this.maxParkingNum = maxParkingNum;
     }
 
