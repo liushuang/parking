@@ -12,21 +12,20 @@ import java.util.List;
  */
 public class ParkingBoy {
     protected List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
+    private ParkPlaceChooser parkPlaceChooser;
 
-    public ParkingBoy(List<ParkPlace> parkPlaceList) {
+    public ParkingBoy(List<ParkPlace> parkPlaceList , ParkPlaceChooser parkPlaceChooser) {
         this.parkPlaceList = parkPlaceList;
+        this.parkPlaceChooser = parkPlaceChooser;
     }
 
     public Ticket parkCar(Car car) throws NoSpaceParkingException {
-        for(int i = 0 ; i < parkPlaceList.size() ; i++){
-            if(parkPlaceList.get(i).getParkingSpaceNumber()==0){
-                continue;
-            }
-            else{
-                return this.parkPlaceList.get(i).parkCar(car);
-            }
+        ParkPlace parkPlace = parkPlaceChooser.chooseParkPlace(this.parkPlaceList);
+        if(parkPlace == null){
+            throw new NoSpaceParkingException();
+        }else{
+            return parkPlace.parkCar(car);
         }
-        throw new NoSpaceParkingException();
     }
 
     public void addParkPlace(ParkPlace parkPlace) {

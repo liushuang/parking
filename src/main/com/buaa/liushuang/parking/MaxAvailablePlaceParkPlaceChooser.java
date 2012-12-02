@@ -5,17 +5,13 @@ import java.util.List;
 /**
  * Created with IntelliJ IDEA.
  * User: software
- * Date: 12-11-25
- * Time: 下午4:20
+ * Date: 12-12-2
+ * Time: 下午3:22
  * To change this template use File | Settings | File Templates.
  */
-public class SmartParkingBoy extends ParkingBoy {
-    public SmartParkingBoy(List<ParkPlace> parkPlaceList) {
-        super(parkPlaceList);
-    }
-
+public class MaxAvailablePlaceParkPlaceChooser implements ParkPlaceChooser {
     @Override
-    public Ticket parkCar(Car car) throws NoSpaceParkingException {
+    public ParkPlace chooseParkPlace(List<ParkPlace> parkPlaceList) {
         int maxSpaceNum = 0;
         int maxSpaceParkPlaceIndex = 0;
         for(int i = 0 ; i < parkPlaceList.size() ; i++){
@@ -24,6 +20,6 @@ public class SmartParkingBoy extends ParkingBoy {
                 maxSpaceParkPlaceIndex = i;
             }
         }
-        return parkPlaceList.get(maxSpaceParkPlaceIndex).parkCar(car);
+        return parkPlaceList.get(maxSpaceParkPlaceIndex) ;
     }
 }

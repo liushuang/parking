@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8de2ce4-4609-4b2c-a031-ff218b207d0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/SmartParkingBoy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SmartParkingBoyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/FirstAvailableParkPlaceChooser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/HighestAvailableRateParkPlaceChooser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlaceChooser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SuperParkingBoyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SmartParkingBoyTest.java" afterPath="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SmartParkingBoyTest.java" />
+      <change type="MOVED" beforePath="E:\liushuang\parking\src\main\com\buaa\liushuang\parking\SmartParkingBoy.java" afterPath="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/MaxAvailablePlaceParkPlaceChooser.java" />
     </list>
     <ignored path="parking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,19 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkPlaceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkPlaceTest.java">
+      <file leaf-file-name="SuperParkingBoyTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SuperParkingBoyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="57" selection-start="1014" selection-end="1056" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingBoyTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="49" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+            <state line="28" column="40" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,19 +80,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmartParkingBoy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/SmartParkingBoy.java">
+      <file leaf-file-name="HighestAvailableRateParkPlaceChooser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/HighestAvailableRateParkPlaceChooser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="15" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
+            <state line="25" column="51" selection-start="858" selection-end="858" vertical-scroll-proportion="1.1255925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmartParkingBoyTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ParkPlaceChooser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlaceChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FirstAvailableParkPlaceChooser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/FirstAvailableParkPlaceChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="43" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxAvailablePlaceParkPlaceChooser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/MaxAvailablePlaceParkPlaceChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="44" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmartParkingBoyTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SmartParkingBoyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="558" selection-end="558" vertical-scroll-proportion="0.39819005">
+            <state line="17" column="4" selection-start="364" selection-end="1049" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,19 +130,25 @@
       <file leaf-file-name="ParkingBoy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="74" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#330#341#0" expanded="true" />
-              </folding>
+            <state line="16" column="87" selection-start="464" selection-end="480" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ticket.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Ticket.java">
+      <file leaf-file-name="NoSpaceParkingException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+            <state line="9" column="55" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoCarException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="40" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +157,7 @@
       <file leaf-file-name="ParkPlace.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="42" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+            <state line="67" column="34" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,17 +176,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParingException.java" />
         <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java" />
         <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java" />
         <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java" />
         <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Parking.java" />
         <option value="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingTest.java" />
-        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlaceChooser.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/FirstAvailableParkPlaceChooser.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/MaxAvailbalePlaceParkPlaceChooser.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/MaxAvailablePlaceParkPlaceChooser.java" />
         <option value="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java" />
         <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/SmartParkingBoy.java" />
         <option value="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SmartParkingBoyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java" />
+        <option value="$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/HighestAvailableRateParkPlaceChooser.java" />
+        <option value="$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SuperParkingBoyTest.java" />
       </list>
     </option>
   </component>
@@ -195,6 +230,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -277,95 +322,28 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.buaa.liushuang.parking" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmartParkingBoyTest.should_smart_park_car_two_park_place_2">
-    <configuration default="false" name="ParkingBoyTest.should_park_a_car_when_has_two_park_place_and_one_is_full" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="parking" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingBoyTest" />
-      <option name="METHOD_NAME" value="should_park_a_car_when_has_two_park_place_and_one_is_full" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_a_full_ParkSpace" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="parking" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingBoyTest" />
-      <option name="METHOD_NAME" value="should_throw_NoSpaceParkingException_when_parkig_to_a_full_ParkSpace" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="parking" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.ParkingBoyTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SuperParkingBoyTest">
     <configuration default="false" name="ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="parking" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -410,6 +388,72 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="SmartParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.SmartParkingBoyTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in parking" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SuperParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="parking" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.buaa.liushuang.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.buaa.liushuang.parking.SuperParkingBoyTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -430,24 +474,6 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -476,6 +502,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -551,11 +595,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_parking_in_a_empty_parkplace" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_park_a_car_when_has_two_park_place_and_one_is_full" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_a_full_ParkSpace" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.SmartParkingBoyTest.should_smart_park_car_two_park_place_2" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkingBoyTest.should_throw_NoSpaceParkingException_when_parkig_to_two_full_ParkSpace" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SmartParkingBoyTest.should_smart_park_car_two_park_place_2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SmartParkingBoyTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in parking" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SuperParkingBoyTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -588,8 +632,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21839081" sideWeight="0.6754144" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32458565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28591955" sideWeight="0.6767956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32320443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -656,16 +700,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="55" selection-start="248" selection-end="248" vertical-scroll-proportion="0.37173912" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.41304347" />
@@ -673,57 +707,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="29" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkPlaceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="57" selection-start="1014" selection-end="1056" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="57" selection-start="1014" selection-end="1056" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/ParkingBoyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="42" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="74" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#330#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/SmartParkingBoy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="15" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
+        <state line="94" column="89" selection-start="3919" selection-end="3949" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SmartParkingBoyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="558" selection-end="558" vertical-scroll-proportion="0.39819005">
+        <state line="17" column="4" selection-start="364" selection-end="1049" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/FirstAvailableParkPlaceChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/buaa/liushuang/parking/SuperParkingBoyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="40" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoSpaceParkingException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/NoCarException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="34" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkingBoy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="87" selection-start="464" selection-end="480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/ParkPlaceChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/MaxAvailablePlaceParkPlaceChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/buaa/liushuang/parking/HighestAvailableRateParkPlaceChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="51" selection-start="858" selection-end="858" vertical-scroll-proportion="1.1255925">
+          <folding />
         </state>
       </provider>
     </entry>

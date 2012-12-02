@@ -26,7 +26,7 @@ public class ParkingBoyTest {
         parkPlace = new ParkPlace(100);
         parkPlaceList = new ArrayList<ParkPlace>();
         parkPlaceList.add(parkPlace);
-        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        this.parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
         Car car = new Car();
         Ticket ticket = parkingBoy.parkCar(car);
         Assert.assertEquals(99,parkPlace.getParkingSpaceNumber());
@@ -39,7 +39,7 @@ public class ParkingBoyTest {
         parkPlace = new ParkPlace(100);
         parkPlaceList = new ArrayList<ParkPlace>();
         parkPlaceList.add(parkPlace);
-        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        this.parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
         Car car = new Car();
         Ticket ticket = parkingBoy.parkCar(car);
         Car carAfterParking = parkingBoy.getCarByTicket(ticket);
@@ -53,7 +53,7 @@ public class ParkingBoyTest {
         ParkPlace parkPlace2 = new ParkPlace(100);
         parkPlaceList.add(parkPlace1);
         parkPlaceList.add(parkPlace2);
-        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        this.parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
         Car car = new Car();
         parkingBoy.parkCar(car);
         Assert.assertEquals(100-1,parkPlace1.getParkingSpaceNumber() );
@@ -66,7 +66,7 @@ public class ParkingBoyTest {
         ParkPlace parkPlace2 = new ParkPlace(100);
         parkPlaceList.add(parkPlace1);
         parkPlaceList.add(parkPlace2);
-        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        this.parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
         parkingBoy.parkCar(new Car());
         Car car = new Car();
         Ticket ticket = parkingBoy.parkCar(car);
@@ -79,7 +79,7 @@ public class ParkingBoyTest {
         this.parkPlaceList = new ArrayList<ParkPlace>();
         ParkPlace parkPlace1 = new ParkPlace(1);
         parkPlaceList.add(parkPlace1);
-        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        this.parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
         parkingBoy.parkCar(new Car());
         Car car = new Car();
         parkingBoy.parkCar(car);
@@ -92,7 +92,7 @@ public class ParkingBoyTest {
         ParkPlace parkPlace2 = new ParkPlace(1);
         parkPlaceList.add(parkPlace1);
         parkPlaceList.add(parkPlace2);
-        this.parkingBoy = new ParkingBoy(parkPlaceList);
+        this.parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
         parkingBoy.parkCar(new Car());
         parkingBoy.parkCar(new Car());
         Car car = new Car();

@@ -63,4 +63,8 @@ public class ParkPlace {
             throw new NoCarException();
         }
     }
+
+    public int getMaxParkingNum(){
+        return this.maxParkingNum;
+    }
 }
