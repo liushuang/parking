@@ -16,6 +16,13 @@ then 取到同一辆车
 given 一个ParkPlace,10个停车位，停了2辆车
 when 取停车信息
 then 返回"车位数:10\n空位数:8\n"
+
+given 一个ParkingBoy，有管理3个ParkPlace，每个ParkPlace停有2辆车
+when 取停车信息
+then 返回：
+"停车场编号:0\n\t车位数：10\n\t空位数：8\n停车场编号:1\n\t车位数：10\n\t空位数：8\n停车场编号:2\n\t车位数：10\n\t空位数：8\n"
+
+"停车场编号:0\n\t车位数:10\n\t空位数:8\n停车场编号:1\n\t车位数:10\n\t空位数:8\n停车场编号:2\n\t车位数:10\n\t空位数:8\nTotal车位数:30\nTotal空位数:24\n"
 parking
 =======
 停车场实例：https://github.com/xianjing/l1-parkingLots.git
