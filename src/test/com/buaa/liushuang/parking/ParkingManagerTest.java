@@ -21,14 +21,30 @@ public class ParkingManagerTest {
     }
 
     @Test
-    public void should_get_one_parkingBoy_after_add_to_parkingManager() throws NoSpaceParkingException {
+    public void should_get_nine_parkingSpaceNum_after_park_to_parkingManager() throws NoSpaceParkingException {
         List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
         ParkPlace parkPlace = new ParkPlace(10);
         parkPlaceList.add(parkPlace);
-        ParkingManager parkingManager = new ParkingManager(parkPlaceList);
+        ParkingManager parkingManager = new ParkingManager(parkPlaceList, null);
 
         parkingManager.parkCar(new Car());
 
         Assert.assertEquals(parkPlace.getParkingSpaceNumber(),9);
+    }
+
+    @Test
+    public void should_get_nine_after_use_parkingBoy_park() throws NoSpaceParkingException, CanNotFindParkingBoy {
+        ParkPlace parkPlace = new ParkPlace(10);
+        List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
+        parkPlaceList.add(parkPlace);
+        ParkingBoy parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
+        List<ParkingBoy> parkingBoyList = new ArrayList<ParkingBoy>();
+        parkingBoyList.add(parkingBoy);
+        ParkingManager parkingManager = new ParkingManager(null,parkingBoyList);
+
+        parkingManager.useParkingBoyPark(new Car(),0);
+
+        Assert.assertEquals(parkPlace.getParkingSpaceNumber(),9);
+
     }
 }

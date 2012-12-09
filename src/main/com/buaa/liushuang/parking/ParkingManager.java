@@ -10,7 +10,17 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkingManager extends ParkingBoy {
-    public ParkingManager(List<ParkPlace> parkPlaceList) {
+    List<ParkingBoy> parkingBoyList ;
+    public ParkingManager(List<ParkPlace> parkPlaceList, List<ParkingBoy> parkingBoyList) {
         super(parkPlaceList,new HighestAvailableRateParkPlaceChooser());
+        this.parkingBoyList = parkingBoyList;
+    }
+
+    public Ticket useParkingBoyPark(Car car, int parkingBoyIndex) throws NoSpaceParkingException, CanNotFindParkingBoy {
+        if(parkingBoyIndex < this.parkingBoyList.size()){
+            return this.parkingBoyList.get(parkingBoyIndex).parkCar(car);
+        }else{
+            throw new CanNotFindParkingBoy();
+        }
     }
 }
