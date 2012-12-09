@@ -23,4 +23,20 @@ public class ParkingManager extends ParkingBoy {
             throw new CanNotFindParkingBoy();
         }
     }
+
+    @Override
+    public Car getCarByTicket(Ticket ticket) throws NoCarException {
+        try{
+            return super.getCarByTicket(ticket);
+        }catch(NoCarException e){
+            for(int i = 0 ; i < parkingBoyList.size() ; i++){
+                try{
+                    return this.parkingBoyList.get(i).getCarByTicket(ticket);
+                }catch (NoCarException ex){
+                    continue;
+                }
+            }
+            throw new NoCarException();
+        }
+    }
 }

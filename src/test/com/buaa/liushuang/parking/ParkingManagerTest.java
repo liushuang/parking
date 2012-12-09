@@ -58,7 +58,13 @@ public class ParkingManagerTest {
     }
 
     @Test
-    public void should_get_same_car_after_parking_to_parkPlace(){
+    public void should_get_same_car_after_parking_to_parkPlace() throws NoSpaceParkingException, CanNotFindParkingBoy, NoCarException {
+        ParkingManager parkingManager = new ParkingManager(managerParkPlaceList,parkingBoyList);
+        Car car = new Car();
+        Ticket ticket = parkingManager.useParkingBoyPark(car,0);
 
+        Car carAfterPark = parkingManager.getCarByTicket(ticket);
+
+        Assert.assertEquals(car,carAfterPark);
     }
 }
