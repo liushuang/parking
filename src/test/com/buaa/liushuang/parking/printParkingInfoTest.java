@@ -33,6 +33,7 @@ public class printParkingInfoTest {
     private ParkPlace parkingManagerParkPlace3;
     private List<ParkPlace> parkingManagerParkPlaceList;
     private List<ParkingBoy> parkingManagerParkingBoyList;
+    private ParkingManager parkingManager;
 
     @Before
     public void init() throws NoSpaceParkingException {
@@ -82,6 +83,8 @@ public class printParkingInfoTest {
         parkingBoy2ParkPlace2.parkCar(new Car());
         parkingBoy2ParkPlace3.parkCar(new Car());
         parkingBoy2ParkPlace3.parkCar(new Car());
+
+        parkingManager = new ParkingManager(parkingManagerParkPlaceList,parkingManagerParkingBoyList);
     }
 
     @Test
@@ -98,6 +101,11 @@ public class printParkingInfoTest {
 
         Assert.assertEquals(info,"停车场编号:0\n\t车位数:10\n\t空位数:8\n停车场编号:1\n\t车位数:10\n\t空位数:8\n停车场编号:2\n\t车位数:10\n\t空位数:8\nTotal车位数:30\nTotal空位数:24\n");
         parkingBoy1.printParkingInfo();
+    }
+
+    @Test
+    public void should_return_parkingManager_info(){
+        String info = parkingManager.getParkingInfo(0);
     }
 
 
