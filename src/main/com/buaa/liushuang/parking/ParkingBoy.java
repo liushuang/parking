@@ -10,7 +10,7 @@ import java.util.List;
  * Time: 下午2:31
  * To change this template use File | Settings | File Templates.
  */
-public class ParkingBoy {
+public class ParkingBoy implements ParkingReport {
     protected List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
     private ParkPlaceChooser parkPlaceChooser;
 
@@ -41,5 +41,35 @@ public class ParkingBoy {
             }
         }
         throw new NoCarException();
+    }
+
+    @Override
+    public String getParkingInfo(int level) {
+        StringBuilder sb = new StringBuilder();
+        int totalParkingSpaceNum = 0;//总空位数
+        int totalMaxParkingNum = 0 ;//总车位数
+        for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
+            sb.append("停车场编号:" + parkPlaceIndex);
+            sb.append("\n");
+            sb.append(this.parkPlaceList.get(parkPlaceIndex).getParkingInfo(level+1));
+            totalMaxParkingNum += this.parkPlaceList.get(parkPlaceIndex).getMaxParkingNum();
+            totalParkingSpaceNum += this.parkPlaceList.get(parkPlaceIndex).getParkingSpaceNumber();
+        }
+        for(int i = 0 ; i < level ; i++){
+            sb.append("\t");
+        }
+        sb.append("Total车位数:" + totalMaxParkingNum);
+        sb.append("\n");
+        for(int i = 0 ; i < level ; i++){
+            sb.append("\t");
+        }
+        sb.append("Total空位数:" + totalParkingSpaceNum);
+        sb.append("\n");
+        return sb.toString();
+    }
+
+    @Override
+    public void printParkingInfo() {
+        System.out.println(this.getParkingInfo(0));
     }
 }
