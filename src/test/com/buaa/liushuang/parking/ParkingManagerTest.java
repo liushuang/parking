@@ -15,36 +15,50 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkingManagerTest {
+    private ParkingManager parkingManager;
+
+    private List<ParkPlace> managerParkPlaceList;
+    private ParkPlace managerParkPlace;
+
+    private List<ParkingBoy> parkingBoyList;
+    private ParkingBoy parkingBoy;
+
+    private ParkPlace parkingboyParkPlace;
+    private List<ParkPlace> parkingBoyParkPlaceList;
     @Before
     public void init(){
+        managerParkPlaceList = new ArrayList<ParkPlace>();
+        managerParkPlace = new ParkPlace(10);
+        managerParkPlaceList.add(managerParkPlace);
 
+        parkingboyParkPlace = new ParkPlace(10);
+        parkingBoyParkPlaceList = new ArrayList<ParkPlace>();
+        parkingBoyParkPlaceList.add(parkingboyParkPlace);
+        parkingBoy = new ParkingBoy(parkingBoyParkPlaceList,new FirstAvailableParkPlaceChooser());
+        parkingBoyList = new ArrayList<ParkingBoy>();
+        parkingBoyList.add(parkingBoy);
     }
 
     @Test
     public void should_get_nine_parkingSpaceNum_after_park_to_parkingManager() throws NoSpaceParkingException {
-        List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
-        ParkPlace parkPlace = new ParkPlace(10);
-        parkPlaceList.add(parkPlace);
-        ParkingManager parkingManager = new ParkingManager(parkPlaceList, null);
+        parkingManager = new ParkingManager(managerParkPlaceList, null);
 
         parkingManager.parkCar(new Car());
 
-        Assert.assertEquals(parkPlace.getParkingSpaceNumber(),9);
+        Assert.assertEquals(managerParkPlace.getParkingSpaceNumber(),9);
     }
 
     @Test
     public void should_get_nine_after_use_parkingBoy_park() throws NoSpaceParkingException, CanNotFindParkingBoy {
-        ParkPlace parkPlace = new ParkPlace(10);
-        List<ParkPlace> parkPlaceList = new ArrayList<ParkPlace>();
-        parkPlaceList.add(parkPlace);
-        ParkingBoy parkingBoy = new ParkingBoy(parkPlaceList,new FirstAvailableParkPlaceChooser());
-        List<ParkingBoy> parkingBoyList = new ArrayList<ParkingBoy>();
-        parkingBoyList.add(parkingBoy);
         ParkingManager parkingManager = new ParkingManager(null,parkingBoyList);
 
         parkingManager.useParkingBoyPark(new Car(),0);
 
-        Assert.assertEquals(parkPlace.getParkingSpaceNumber(),9);
+        Assert.assertEquals(parkingboyParkPlace.getParkingSpaceNumber(),9);
+    }
+
+    @Test
+    public void should_get_same_car_after_parking_to_parkPlace(){
 
     }
 }
