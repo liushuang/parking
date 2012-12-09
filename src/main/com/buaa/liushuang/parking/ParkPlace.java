@@ -10,7 +10,7 @@ import java.util.Map;
  * Time: 下午3:09
  * To change this template use File | Settings | File Templates.
  */
-public class ParkPlace {
+public class ParkPlace implements ParkingReport {
     /**
      * 停车场剩余的停车位
      */
@@ -66,5 +66,26 @@ public class ParkPlace {
 
     public int getMaxParkingNum(){
         return this.maxParkingNum;
+    }
+
+    @Override
+    public String getParkingInfo(int level) {
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0 ; i < level ; i++){
+            sb.append("\t");
+        }
+        sb.append("车位数:" + this.getMaxParkingNum());
+        sb.append("\n");
+        for(int i = 0 ; i < level ; i++){
+            sb.append("\t");
+        }
+        sb.append("空位数:" + this.getParkingSpaceNumber());
+        sb.append("\n");
+        return sb.toString();
+    }
+
+    @Override
+    public void printParkingInfo() {
+        System.out.print(this.getParkingInfo(0));
     }
 }
