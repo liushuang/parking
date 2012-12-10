@@ -69,4 +69,22 @@ public class ParkingManager extends ParkingBoy {
     public void printParkingInfo() {
         System.out.println(this.getParkingInfo(0));
     }
+
+    @Override
+    public int getTotalMaxParkingNum() {
+        int totalMaxParkingNum = 0 ;//总车位数
+        for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
+            totalMaxParkingNum += this.parkPlaceList.get(parkPlaceIndex).getTotalMaxParkingNum();
+        }
+        return totalMaxParkingNum;
+    }
+
+    @Override
+    public int getTotalParkingSpaceNum() {
+        int totalParkingSpaceNum = 0;//总空位数
+        for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
+            totalParkingSpaceNum += this.parkPlaceList.get(parkPlaceIndex).getTotalParkingSpaceNum();
+        }
+        return totalParkingSpaceNum;
+    }
 }

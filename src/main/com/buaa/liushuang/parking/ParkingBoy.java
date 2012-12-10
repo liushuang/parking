@@ -58,12 +58,12 @@ public class ParkingBoy implements ParkingReport {
         for(int i = 0 ; i < level ; i++){
             sb.append("\t");
         }
-        sb.append("Total车位数:" + totalMaxParkingNum);
+        sb.append("Total车位数:" + getTotalMaxParkingNum() );
         sb.append("\n");
         for(int i = 0 ; i < level ; i++){
             sb.append("\t");
         }
-        sb.append("Total空位数:" + totalParkingSpaceNum);
+        sb.append("Total空位数:" + getTotalParkingSpaceNum());
         sb.append("\n");
         return sb.toString();
     }
@@ -71,5 +71,23 @@ public class ParkingBoy implements ParkingReport {
     @Override
     public void printParkingInfo() {
         System.out.println(this.getParkingInfo(0));
+    }
+
+    @Override
+    public int getTotalMaxParkingNum() {
+        int totalMaxParkingNum = 0 ;//总车位数
+        for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
+            totalMaxParkingNum += this.parkPlaceList.get(parkPlaceIndex).getTotalMaxParkingNum();
+        }
+        return totalMaxParkingNum;
+    }
+
+    @Override
+    public int getTotalParkingSpaceNum() {
+        int totalParkingSpaceNum = 0;//总空位数
+        for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
+            totalParkingSpaceNum += this.parkPlaceList.get(parkPlaceIndex).getTotalParkingSpaceNum();
+        }
+        return totalParkingSpaceNum;
     }
 }
