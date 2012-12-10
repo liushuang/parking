@@ -43,24 +43,29 @@ public class ParkingManager extends ParkingBoy {
     @Override
     public String getParkingInfo(int level) {
         StringBuilder sb = new StringBuilder();
-        int totalParkingSpaceNum = 0;//总空位数
-        int totalMaxParkingNum = 0 ;//总车位数
         for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
-            sb.append("停车场编号:" + parkPlaceIndex);
-            sb.append("\n");
+            for(int i = 0 ; i < level ; i++){
+                sb.append("\t");
+            }
+            sb.append("停车场编号:" + parkPlaceIndex+ "\n");
             sb.append(this.parkPlaceList.get(parkPlaceIndex).getParkingInfo(level+1));
-            totalMaxParkingNum += this.parkPlaceList.get(parkPlaceIndex).getMaxParkingNum();
-            totalParkingSpaceNum += this.parkPlaceList.get(parkPlaceIndex).getParkingSpaceNumber();
+        }
+        for(int parkBoyIndex = 0 ; parkBoyIndex < this.parkingBoyList.size() ; parkBoyIndex++){
+            for(int i = 0 ; i < level ; i++){
+                sb.append("\t");
+            }
+            sb.append("停车仔编号:" + parkBoyIndex + "\n");
+            sb.append(this.parkingBoyList.get(parkBoyIndex).getParkingInfo(level + 1));
         }
         for(int i = 0 ; i < level ; i++){
             sb.append("\t");
         }
-        sb.append("Total车位数:" + totalMaxParkingNum);
+        sb.append("Total车位数:" + this.getTotalMaxParkingNum());
         sb.append("\n");
         for(int i = 0 ; i < level ; i++){
             sb.append("\t");
         }
-        sb.append("Total空位数:" + totalParkingSpaceNum);
+        sb.append("Total空位数:" + this.getTotalParkingSpaceNum());
         sb.append("\n");
         return sb.toString();
     }
@@ -76,6 +81,9 @@ public class ParkingManager extends ParkingBoy {
         for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
             totalMaxParkingNum += this.parkPlaceList.get(parkPlaceIndex).getTotalMaxParkingNum();
         }
+        for(int parkBoyIndex = 0 ; parkBoyIndex < this.parkingBoyList.size() ;parkBoyIndex ++){
+            totalMaxParkingNum += this.parkingBoyList.get(parkBoyIndex).getTotalMaxParkingNum();
+        }
         return totalMaxParkingNum;
     }
 
@@ -84,6 +92,9 @@ public class ParkingManager extends ParkingBoy {
         int totalParkingSpaceNum = 0;//总空位数
         for(int parkPlaceIndex = 0 ;parkPlaceIndex < this.parkPlaceList.size() ; parkPlaceIndex ++){
             totalParkingSpaceNum += this.parkPlaceList.get(parkPlaceIndex).getTotalParkingSpaceNum();
+        }
+        for(int parkBoyIndex = 0 ; parkBoyIndex < this.parkingBoyList.size() ;parkBoyIndex ++){
+            totalParkingSpaceNum += this.parkingBoyList.get(parkBoyIndex).getTotalParkingSpaceNum();
         }
         return totalParkingSpaceNum;
     }

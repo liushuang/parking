@@ -22,7 +22,11 @@ when 取停车信息
 then 返回：
 "停车场编号:0\n\t车位数：10\n\t空位数：8\n停车场编号:1\n\t车位数：10\n\t空位数：8\n停车场编号:2\n\t车位数：10\n\t空位数：8\n"
 
-"停车场编号:0\n\t车位数:10\n\t空位数:8\n停车场编号:1\n\t车位数:10\n\t空位数:8\n停车场编号:2\n\t车位数:10\n\t空位数:8\nTotal车位数:30\nTotal空位数:24\n"
+given 一个ParkingManager，管理3个ParkPlace，管理3个ParkingBoy
+when 取停车信息
+then 返回：
+"停车场编号:0\n\t车位数:10\n\t空位数:9\n停车场编号:1\n\t车位数:10\n\t空位数:8\n停车场编号:2\n\t车位数:10\n\t空位数:7\n停车仔编号:0\n\t停车场编号:0\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:1\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:2\n\t\t车位数:10\n\t\t空位数:8\n\tTotal车位数:30\n\tTotal空位数:24\n停车仔编号:1\n\t停车场编号:0\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:1\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:2\n\t\t车位数:10\n\t\t空位数:8\n\tTotal车位数:30\n\tTotal空位数:24\nTotal车位数:90\nTotal空位数:72\n"
+
 parking
 =======
 停车场实例：https://github.com/xianjing/l1-parkingLots.git

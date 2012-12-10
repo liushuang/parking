@@ -14,7 +14,7 @@ import java.util.List;
  * Time: 下午4:16
  * To change this template use File | Settings | File Templates.
  */
-public class printParkingInfoTest {
+public class PrintParkingInfoTest {
     private ParkPlace parkPlace1;
 
     private ParkPlace parkingBoy1ParkPlace1;
@@ -59,9 +59,14 @@ public class printParkingInfoTest {
         this.parkingBoy2 = new ParkingBoy(parkingBoy2ParkPlaceList,new FirstAvailableParkPlaceChooser());
 
         this.parkingManagerParkPlace1 = new ParkPlace(10);
+        this.parkingManagerParkPlace1.parkCar(new Car());
         this.parkingManagerParkPlace2 = new ParkPlace(10);
+        this.parkingManagerParkPlace2.parkCar(new Car());
+        this.parkingManagerParkPlace2.parkCar(new Car());
         this.parkingManagerParkPlace3 = new ParkPlace(10);
-        this.parkingBoy2ParkPlaceList = new ArrayList<ParkPlace>();
+        this.parkingManagerParkPlace3.parkCar(new Car());
+        this.parkingManagerParkPlace3.parkCar(new Car());
+        this.parkingManagerParkPlace3.parkCar(new Car());
         this.parkingManagerParkPlaceList = new ArrayList<ParkPlace>();
         this.parkingManagerParkPlaceList.add(parkingManagerParkPlace1);
         this.parkingManagerParkPlaceList.add(parkingManagerParkPlace2);
@@ -92,20 +97,77 @@ public class printParkingInfoTest {
         String info = parkPlace1.getParkingInfo(0);
 
         Assert.assertEquals(info,"车位数:10\n空位数:8\n");
-        parkPlace1.printParkingInfo();
+        //打印报表
+        //parkPlace1.printParkingInfo();
     }
 
     @Test
     public void should_return_parkingBoy_info(){
         String info = parkingBoy1.getParkingInfo(0);
 
-        Assert.assertEquals(info,"停车场编号:0\n\t车位数:10\n\t空位数:8\n停车场编号:1\n\t车位数:10\n\t空位数:8\n停车场编号:2\n\t车位数:10\n\t空位数:8\nTotal车位数:30\nTotal空位数:24\n");
-        parkingBoy1.printParkingInfo();
+        StringBuilder sb = new StringBuilder();
+        sb.append("停车场编号:0\n");
+        sb.append("\t车位数:10\n");
+        sb.append("\t空位数:8\n");
+        sb.append("停车场编号:1\n");
+        sb.append("\t车位数:10\n");
+        sb.append("\t空位数:8\n");
+        sb.append("停车场编号:2\n");
+        sb.append("\t车位数:10\n");
+        sb.append("\t空位数:8\n");
+        sb.append("Total车位数:30\n");
+        sb.append("Total空位数:24\n");
+
+        Assert.assertEquals(info, sb.toString());
+        //打印报表
+        //parkingBoy1.printParkingInfo();
     }
 
     @Test
     public void should_return_parkingManager_info(){
         String info = parkingManager.getParkingInfo(0);
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("停车场编号:0\n");
+        sb.append("\t车位数:10\n");
+        sb.append("\t空位数:9\n");
+        sb.append("停车场编号:1\n");
+        sb.append("\t车位数:10\n");
+        sb.append("\t空位数:8\n");
+        sb.append("停车场编号:2\n");
+        sb.append("\t车位数:10\n");
+        sb.append("\t空位数:7\n");
+        sb.append("停车仔编号:0\n");
+        sb.append("\t停车场编号:0\n");
+        sb.append("\t\t车位数:10\n");
+        sb.append("\t\t空位数:8\n");
+        sb.append("\t停车场编号:1\n");
+        sb.append("\t\t车位数:10\n");
+        sb.append("\t\t空位数:8\n");
+        sb.append("\t停车场编号:2\n");
+        sb.append("\t\t车位数:10\n");
+        sb.append("\t\t空位数:8\n");
+        sb.append("\tTotal车位数:30\n");
+        sb.append("\tTotal空位数:24\n");
+        sb.append("停车仔编号:1\n");
+        sb.append("\t停车场编号:0\n");
+        sb.append("\t\t车位数:10\n");
+        sb.append("\t\t空位数:8\n");
+        sb.append("\t停车场编号:1\n");
+        sb.append("\t\t车位数:10\n");
+        sb.append("\t\t空位数:8\n");
+        sb.append("\t停车场编号:2\n");
+        sb.append("\t\t车位数:10\n");
+        sb.append("\t\t空位数:8\n");
+        sb.append("\tTotal车位数:30\n");
+        sb.append("\tTotal空位数:24\n");
+        sb.append("Total车位数:90\n");
+        sb.append("Total空位数:72\n");
+
+        Assert.assertEquals(info,sb.toString());
+        //打印报表
+        //this.parkingManager.printParkingInfo();
+
     }
 
 
