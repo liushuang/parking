@@ -28,18 +28,5 @@ then 返回：
 "停车场编号:0\n\t车位数:10\n\t空位数:9\n停车场编号:1\n\t车位数:10\n\t空位数:8\n停车场编号:2\n\t车位数:10\n\t空位数:7\n停车仔编号:0\n\t停车场编号:0\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:1\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:2\n\t\t车位数:10\n\t\t空位数:8\n\tTotal车位数:30\n\tTotal空位数:24\n停车仔编号:1\n\t停车场编号:0\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:1\n\t\t车位数:10\n\t\t空位数:8\n\t停车场编号:2\n\t\t车位数:10\n\t\t空位数:8\n\tTotal车位数:30\n\tTotal空位数:24\nTotal车位数:90\nTotal空位数:72\n"
 
 
-
-parking
-=======
-停车场实例：https://github.com/xianjing/l1-parkingLots.git
-
+---------------------------
 http://weibo.com/u/3019412955
-
-www.gradle.org
-停车场系统创建构建脚本
-1编译
-2运行测试产生测试报告
-3打包-parkingLotsModel.jar
-4与Eclipse/Idea插件集成生成项目文件
-
-gradle idea

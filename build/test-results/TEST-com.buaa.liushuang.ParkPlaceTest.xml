@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="PC023" name="com.buaa.liushuang.ParkPlaceTest" tests="6" time="0.015" timestamp="2012-12-16T05:30:34">
+  <properties />
+  <testcase classname="com.buaa.liushuang.ParkPlaceTest" name="should_get_right_car_by_carId" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkPlaceTest" name="should_get_A_car_and_carNumber_minus_1" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkPlaceTest" name="should_return_101_after_add_a_car" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkPlaceTest" name="should_return_fail_add_car_to_no_space_parking" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkPlaceTest" name="should_throw_No_Car_Exception_when_get_a_car_from_empty_park" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkPlaceTest" name="should_throw_no_car_exception_get_car_twice_by_carId" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

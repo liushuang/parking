@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="PC023" name="com.buaa.liushuang.SuperParkingBoyTest" tests="1" time="0.0" timestamp="2012-12-16T05:30:34">
+  <properties />
+  <testcase classname="com.buaa.liushuang.SuperParkingBoyTest" name="should_smart_park_car_two_park_place_2" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="PC023" name="com.buaa.liushuang.ParkingManagerTest" tests="3" time="0.0" timestamp="2012-12-16T05:30:34">
+  <properties />
+  <testcase classname="com.buaa.liushuang.ParkingManagerTest" name="should_get_same_car_after_parking_to_parkPlace" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkingManagerTest" name="should_get_nine_parkingSpaceNum_after_park_to_parkingManager" time="0.0" />
+  <testcase classname="com.buaa.liushuang.ParkingManagerTest" name="should_get_nine_after_use_parkingBoy_park" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
