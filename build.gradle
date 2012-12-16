@@ -1,5 +1,15 @@
 apply plugin: 'java'
+apply plugin: 'idea'
 
+idea {
+    project {
+        jdkName = '1.7'
+        languageLevel = '1.7'
+
+        //you can change the output file
+        outputFile = new File(outputFile.parentFile, 'parking.ipr')
+    }
+}
 tasks.withType(Compile) {
     options.encoding = "UTF-8"
 }
