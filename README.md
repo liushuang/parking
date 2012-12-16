@@ -1,3 +1,8 @@
+组员
+ZY1221129 刘爽
+ZY1221128 刘琛
+ZY1121226 张哲
+
 任务分解
 ----------------ParkingManagerTest---------------
 given 一个ParkingManager，管理1个ParkingPlace，最大可以停10辆车
